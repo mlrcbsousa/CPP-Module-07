@@ -6,7 +6,7 @@
 #    By: msousa <mlrcbsousa@gmail.com>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/21 21:26:04 by msousa            #+#    #+#              #
-#    Updated: 2022/04/20 23:42:31 by msousa           ###   ########.fr        #
+#    Updated: 2022/04/22 17:35:04 by msousa           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,8 +14,8 @@ CFLAGS	= -Wall -Wextra -Werror -std=c++98
 CC			= c++
 RM			= rm -f
 OBJ			= ${SRC:%.cpp=obj/%.o}
-SRC			= main.cpp
-INC			=
+SRC			= main.cpp Array.tpp
+INC			= Array.hpp
 
 NAME		= a.out
 
