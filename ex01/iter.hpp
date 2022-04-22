@@ -1,21 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.hpp                                           :+:      :+:    :+:   */
+/*   iter.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msousa <mlrcbsousa@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/13 18:36:20 by msousa            #+#    #+#             */
-/*   Updated: 2022/04/20 23:36:38 by msousa           ###   ########.fr       */
+/*   Updated: 2022/04/22 17:11:27 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef __MAIN_H__
-# define __MAIN_H__
+#ifndef __ITER_H__
+# define __ITER_H__
 
 # include <iostream>
 
-# define LOG(x) std::cout << x << std::endl
-# define ERROR(x) std::cerr << x << std::endl
+template<typename T>
+void	iter(T * array, int size, void (*fn)( T const & ))
+{
+	if (!array)
+		return;
+
+	for (int i = 0; i < size; i++)
+		fn(array[i]);
+}
 
 #endif

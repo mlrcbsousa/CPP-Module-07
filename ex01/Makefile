@@ -6,7 +6,7 @@
 #    By: msousa <mlrcbsousa@gmail.com>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/21 21:26:04 by msousa            #+#    #+#              #
-#    Updated: 2022/04/20 23:42:28 by msousa           ###   ########.fr        #
+#    Updated: 2022/04/22 16:51:14 by msousa           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ CC			= c++
 RM			= rm -f
 OBJ			= ${SRC:%.cpp=obj/%.o}
 SRC			= main.cpp
-INC			= main.hpp
+INC			= iter.hpp
 
 NAME		= a.out
 
